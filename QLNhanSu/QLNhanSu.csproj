@@ -2351,6 +2351,7 @@
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HopDongController.cs" />
+    <Compile Include="Controllers\LuongController.cs" />
     <Compile Include="Controllers\MyHomeController.cs" />
     <Compile Include="Controllers\PhongBanController.cs" />
     <Compile Include="Global.asax.cs">
@@ -2469,6 +2470,8 @@
     <Content Include="Views\MyHome\HopDong.cshtml" />
     <Content Include="Views\MyHome\CreatePb.cshtml" />
     <Content Include="Views\MyHome\PhongBan.cshtml" />
+    <Content Include="Views\MyHome\CreatePL.cshtml" />
+    <Content Include="Views\MyHome\Luong.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
