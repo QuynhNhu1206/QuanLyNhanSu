@@ -1,0 +1,150 @@
+﻿@model DATA.Entity.NHANVIEN
+
+@{
+    ViewBag.Title = "CreateNv";
+    Layout = "~/Views/Shared/LayoutAdmin.cshtml";
+}
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="card-header">
+        <h4 class="card-title">Nhập thông tin hồ sơ</h4>
+        <div class="card-tools">
+
+        </div>
+    </div>
+
+    <div class="card-body">
+        <form action="/MyHome/CreateNv" method="post">
+            <div class="row">
+                <div class="col-md-6">
+                    <br>
+                    <div class="btn-group input-group-sm">
+                        <button name="btnLuu" id="btnLuu" type="submit" class="btn btn-block btn-default" style="background-color:orange">
+                            <i style="font-size: 20px; text-align:left" class="fas fa-save red_color"></i>
+                            <span>Lưu</span>
+                        </button>
+                    </div>
+
+                    <div class="btn-group input-group-sm">
+                        <a href="phongban" class="btn btn-danger" style="background-color:orange">
+                            <i style="font-size: 20px; text-align:left" class="fas fa-circle-xmark red_color"></i>
+                            <span>Hủy</span>
+                        </a>
+                    </div>
+                    <br />
+                </div>
+
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-horizontal">
+
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="form-group">
+                            @Html.LabelForModel("Mã nhân viên", htmlAttributes: new { @class = "control-label col-md-auto" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.MANV, new { htmlAttributes = new { @class = "form-control" } })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelForModel("CCCD", htmlAttributes: new { @class = "control-label col-md-auto" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.CCCD, new { htmlAttributes = new { @class = "form-control" } })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelForModel("Họ và tên", htmlAttributes: new { @class = "control-label col-md-auto" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.HOTEN, new { htmlAttributes = new { @class = "form-control" } })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelForModel("Giới tính", htmlAttributes: new { @class = "control-label col-md-auto" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.GIOITINH, new { htmlAttributes = new { @class = "form-control" } })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelForModel("Ngày sinh", htmlAttributes: new { @class = "control-label col-md-auto" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.NGAYSINH, new { htmlAttributes = new { @class = "form-control" } })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelForModel("Nơi sinh", htmlAttributes: new { @class = "control-label col-md-auto" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.NOISINH, new { htmlAttributes = new { @class = "form-control" } })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelForModel("Số điện thoại", htmlAttributes: new { @class = "control-label col-md-auto" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.SDT, new { htmlAttributes = new { @class = "form-control" } })
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.LabelForModel("Dân tộc", htmlAttributes: new { @class = "control-label col-md-auto" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.MADT, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelForModel("Tôn giáo", htmlAttributes: new { @class = "control-label col-md-auto" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.MATG, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelForModel("Quốc tịch", htmlAttributes: new { @class = "control-label col-md-auto" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.MAQT, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelForModel("Chức vụ", htmlAttributes: new { @class = "control-label col-md-auto" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.MACV, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelForModel("Phòng ban", htmlAttributes: new { @class = "control-label col-md-auto" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.MAPB, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelForModel("Trình độ", htmlAttributes: new { @class = "control-label col-md-auto" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.MATD, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.GHICHU, htmlAttributes: new { @class = "control-label col-md-auto" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.GHICHU, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+}

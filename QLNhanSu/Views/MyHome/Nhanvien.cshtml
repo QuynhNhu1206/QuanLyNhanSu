@@ -1,0 +1,164 @@
+﻿@model IEnumerable<DATA.Entity.NHANVIEN>
+
+
+@{
+                /**/
+
+                ViewBag.Title = "Nhân viên";
+                Layout = "~/Views/Shared/LayoutAdmin.cshtml";
+}
+<link rel="stylesheet" href="https://cdn.datatables.net/2.0.7/css/dataTables.dataTables.min.css" />
+
+
+<main>
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Danh sách hồ sơ nhân viên</h4>
+                <div class="card-tools">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <br>
+                            <div form class="btn-group input-group-sm">
+                                <a href="CreateNv" class="btn btn-danger" style="background-color:orange">
+                                    <i style="font-size: 20px; text-align:left" class="fas fa-plus red_color"></i>
+                                    <span>Thêm</span>
+                                </a>
+                            </div>
+
+                            <div class="btn-group input-group-sm" ;">
+                                <a href="CreateNv" class="btn btn-danger" style="background-color:orange">
+                                    <i style="font-size: 20px; text-align:left" class="fas fa-pen-to-square red_color"></i>
+                                    <span>Chỉnh sửa</span>
+                                </a>
+                            </div>
+
+                            <div class="btn-group input-group-sm">
+                                <a href="CreateNv" class="btn btn-danger" style="background-color:orange">
+                                    <i style="font-size: 20px; text-align:left" class="fas fa-trash red_color"></i>
+                                    <span>Xóa</span>
+                                </a>
+                            </div>
+                            <br />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card-body table-responsive p-0">
+                <table class="table table-hover table-bordered text-nowrap" style="width:100%; text-justify:auto;" id="myTable" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayName("Mã nhân viên")
+                            </th>
+                            <th>
+                                @Html.DisplayName("CCCD")
+                            </th>
+                            <th>
+                                @Html.DisplayName("Họ và tên")
+                            </th>
+                            <th>
+                                @Html.DisplayName("Giới tính")
+                            </th>
+                            <th>
+                                @Html.DisplayName("Ngày sinh")
+                            </th>
+                            <th>
+                                @Html.DisplayName("Nơi sinh")
+                            </th>
+                            <th>
+                                @Html.DisplayName("SDT")
+                            </th>
+                            <th>
+                                @Html.DisplayName("Dân tộc")
+                            </th>
+                            <th>
+                                @Html.DisplayName("Tôn giáo")
+                            </th>
+                            <th>
+                                @Html.DisplayName("Quốc tịch")
+                            </th>
+                            <th>
+                                @Html.DisplayName("Chức vụ")
+                            </th>
+                            <th>
+                                @Html.DisplayName("Phòng ban")
+                            </th>
+                            <th>
+                                @Html.DisplayName("Trình độ")
+                            </th>
+                            <th>
+                                @Html.DisplayName("Ghi chú")
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr style="text-align:left; justify-content:center">
+                                <th>
+                                    @item.MANV
+                                </th>
+                                <th>
+                                    @item.CCCD
+                                </th>
+                                <th>
+                                    @item.HOTEN
+                                </th>
+                                <th>
+                                    @item.GIOITINH
+                                </th>
+                                <th>
+                                    @item.NGAYSINH
+                                </th>
+                                <th>
+                                    @item.NOISINH
+                                </th>
+                                <th>
+                                    @item.SDT
+                                </th>
+                                <th>
+                                    @item.DANTOC.TENDANTOC
+                                </th>
+                                <th>
+                                    @item.TONGIAO.TENTONGIAO
+                                </th>
+                                <th>
+                                    @item.QUOCTICH.TENQUOCTICH
+                                </th>
+                                <th>
+                                    @item.CHUCVU.TENCHUCVU
+                                </th>
+                                <th>
+                                    @item.PHONGBAN.TENPHONGBAN
+                                </th>
+                                <th>
+                                    @item.TRINHDO.TENTRINHDO
+                                </th>
+                                <th>
+                                    @item.GHICHU
+                                </th>
+
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+ 
+
+</main>
+@section scripts{
+    <script src="https://cdn.datatables.net/2.0.7/js/dataTables.min.js"></script>
+    <script>
+        new DataTable('#myTable');
+    </script>
+}
+
+

@@ -26,3 +26,17 @@ D:\Nam3\ThuongMaiDienTu\QLNhanSu\QLNhanSu\DATA\obj\Debug\DATA.csproj.CoreCompile
 D:\Nam3\ThuongMaiDienTu\QLNhanSu\QLNhanSu\DATA\obj\Debug\DATA.csproj.CopyComplete
 D:\Nam3\ThuongMaiDienTu\QLNhanSu\QLNhanSu\DATA\obj\Debug\DATA.dll
 D:\Nam3\ThuongMaiDienTu\QLNhanSu\QLNhanSu\DATA\obj\Debug\DATA.pdb
+D:\.net\QuanLyNhanSu\DATA\bin\Debug\QLNSu.mdf
+D:\.net\QuanLyNhanSu\DATA\bin\Debug\QLNSu_log.ldf
+D:\.net\QuanLyNhanSu\DATA\bin\Debug\DATA.dll.config
+D:\.net\QuanLyNhanSu\DATA\bin\Debug\DATA.dll
+D:\.net\QuanLyNhanSu\DATA\bin\Debug\DATA.pdb
+D:\.net\QuanLyNhanSu\DATA\bin\Debug\EntityFramework.dll
+D:\.net\QuanLyNhanSu\DATA\bin\Debug\EntityFramework.SqlServer.dll
+D:\.net\QuanLyNhanSu\DATA\bin\Debug\EntityFramework.xml
+D:\.net\QuanLyNhanSu\DATA\bin\Debug\EntityFramework.SqlServer.xml
+D:\.net\QuanLyNhanSu\DATA\obj\Debug\DATA.csproj.AssemblyReference.cache
+D:\.net\QuanLyNhanSu\DATA\obj\Debug\DATA.csproj.CoreCompileInputs.cache
+D:\.net\QuanLyNhanSu\DATA\obj\Debug\DATA.csproj.CopyComplete
+D:\.net\QuanLyNhanSu\DATA\obj\Debug\DATA.dll
+D:\.net\QuanLyNhanSu\DATA\obj\Debug\DATA.pdb
