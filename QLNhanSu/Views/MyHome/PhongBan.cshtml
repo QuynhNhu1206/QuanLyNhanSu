@@ -1,0 +1,75 @@
+﻿@model IEnumerable<DATA.Entity.PHONGBAN>
+@{
+    ViewBag.Title = "Phòng ban";
+    Layout = "~/Views/Shared/LayoutAdmin.cshtml";
+}
+
+<link rel="stylesheet" href="https://cdn.datatables.net/2.0.7/css/dataTables.dataTables.min.css" />
+<main>
+    <div class="card card-default" data-select2-id="29">
+        <div class="card-header">
+            <h4 class="card-title">Nhập thông tin phòng ban</h4>
+            <div class="card-tools">
+                <div class="row">
+                    <div class="col-md-6">
+                        <br>
+                        <div form class="btn-group input-group-sm">
+                            <a href="CreatePb" class="btn btn-danger" style="background-color:orange">
+                                <i style="font-size: 20px; text-align:left" class="fas fa-plus red_color"></i>
+                                <span>Thêm</span>
+                            </a>
+                        </div>
+
+                        <div class="btn-group input-group-sm" ;">
+                            <a href="CreatePb" class="btn btn-danger" style="background-color:orange">
+                                <i style="font-size: 20px; text-align:left" class="fas fa-pen-to-square red_color"></i>
+                                <span>Chỉnh sửa</span>
+                            </a>
+                        </div>
+
+                        <div class="btn-group input-group-sm">
+                            <a href="CreatePb" class="btn btn-danger" style="background-color:orange">
+                                <i style="font-size: 20px; text-align:left" class="fas fa-trash red_color"></i>
+                                <span>Xóa</span>
+                            </a>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-body table-responsive p-0">
+            <table class="table table-hover table-bordered text-nowrap" style="width:100%; text-justify:auto;" id="myTable" cellspacing="0">
+                <thead>
+                    <tr class="col-md-10">
+                        <th>
+                            @Html.DisplayName("Mã phòng ban")
+                        </th>
+                        <th>
+                            @Html.DisplayName("Tên phòng ban")
+                        </th>
+                    </tr>
+                </thead>
+                @foreach (var item in Model)
+                {
+                    <tr class="col-md-10" style="text-align:left; justify-content:center">
+                        <th>
+                            @item.MAPB
+                        </th>
+                        <th>
+                            @item.TENPHONGBAN
+                        </th>
+                        
+
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</main>
+@section scripts{
+    <script src="https://cdn.datatables.net/2.0.7/js/dataTables.min.js"></script>
+    <script>
+        new DataTable('#myTable');
+    </script>
+}
