@@ -2347,8 +2347,10 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\BaoHiemController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HopDongController.cs" />
     <Compile Include="Controllers\MyHomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -2457,6 +2459,13 @@
     <Content Include="Views\Shared\LayoutAdmin.cshtml" />
     <Content Include="Views\MyHome\DangNhap.cshtml" />
     <Content Include="ViewPage1.cshtml" />
+    <Content Include="Views\MyHome\BaoHiem.cshtml" />
+    <Content Include="Views\MyHome\BaoHiemXH.cshtml" />
+    <Content Include="Views\MyHome\BaoHiemYTE.cshtml" />
+    <Content Include="Views\MyHome\CreateHD.cshtml" />
+    <Content Include="Views\MyHome\CreateXH.cshtml" />
+    <Content Include="Views\MyHome\CreateYT.cshtml" />
+    <Content Include="Views\MyHome\HopDong.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

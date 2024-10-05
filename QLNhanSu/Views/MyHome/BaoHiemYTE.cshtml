@@ -1,0 +1,111 @@
+﻿@model IEnumerable<DATA.Entity.BHYT>
+@{
+    ViewBag.Title = "Bảo hiểm Y tế";
+    Layout = "~/Views/Shared/LayoutAdmin.cshtml";
+}
+<link rel="stylesheet" href="https://cdn.datatables.net/2.0.7/css/dataTables.dataTables.min.css" />
+<main>
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Danh sách bảo hiểm y tế</h4>
+                <div class="card-tools">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <br>
+                            <div form class="btn-group input-group-sm">
+                                <a href="Createyt" class="btn btn-danger" style="background-color:orange">
+                                    <i style="font-size: 20px; text-align:left" class="fas fa-plus red_color"></i>
+                                    <span>Thêm</span>
+                                </a>
+                            </div>
+
+                            <div class="btn-group input-group-sm" ;">
+                                <a href="Createyt" class="btn btn-danger" style="background-color:orange">
+                                    <i style="font-size: 20px; text-align:left" class="fas fa-pen-to-square red_color"></i>
+                                    <span>Chỉnh sửa</span>
+                                </a>
+                            </div>
+
+                            <div class="btn-group input-group-sm">
+                                <a href="Createyt" class="btn btn-danger" style="background-color:orange">
+                                    <i style="font-size: 20px; text-align:left" class="fas fa-trash red_color"></i>
+                                    <span>Xóa</span>
+                                </a>
+                            </div>
+                            <br />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card-body table-responsive p-0">
+                <table class="table table-hover table-bordered text-nowrap" style="width:100%; text-justify:auto;" id="myTable" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayName("ID")
+                            </th>
+                            <th>
+                                @Html.DisplayName("ID_BẢO HIỂM")
+                            </th>
+                            <th>
+                                @Html.DisplayName("Mã bảo hiểm")
+                            </th>
+                            <th>
+                                @Html.DisplayName("Nơi đăng ký")
+                            </th>
+                            <th>
+                                @Html.DisplayName("Giá trị sử dụng")
+                            </th>
+                            <th>
+                                @Html.DisplayName("Nơi cấp")
+                            </th>
+                            <th>
+                                @Html.DisplayName("Mã vùng")
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr style="text-align:left; justify-content:center">
+                                <th>
+                                    @item.ID
+                                </th>
+                                <th>
+                                    @item.BAOHIEM.LOAIBAOHIEM
+                                </th>
+                                <th>
+                                    @item.MABH
+                                </th>
+                                <th>
+                                    @item.NOIDANGKY
+                                </th>
+                                <th>
+                                    @item.GTSD
+                                </th>
+                                <th>
+                                    @item.NOICAP
+                                </th>
+                                <th>
+                                    @item.MAVUNG
+                                </th>
+                               
+
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+@section scripts{
+    <script src="https://cdn.datatables.net/2.0.7/js/dataTables.min.js"></script>
+    <script>
+        new DataTable('#myTable');
+    </script>
+}
