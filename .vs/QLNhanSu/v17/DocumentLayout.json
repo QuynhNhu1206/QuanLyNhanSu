@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Project\\QLNhanSu\\QLNhanSu\\",
+  "WorkspaceRootPath": "C:\\Users\\VO VAN KHOI\\OneDrive\\Documents\\QuanLyNhanSu\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{96EBA5A2-709B-418D-9E8E-1A082E80809F}|QLNhanSu\\QLNhanSu.csproj|d:\\project\\qlnhansu\\qlnhansu\\qlnhansu\\views\\myhome\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{96EBA5A2-709B-418D-9E8E-1A082E80809F}|QLNhanSu\\QLNhanSu.csproj|solutionrelative:qlnhansu\\views\\myhome\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{96EBA5A2-709B-418D-9E8E-1A082E80809F}|QLNhanSu\\QLNhanSu.csproj|c:\\users\\vo van khoi\\onedrive\\documents\\quanlynhansu\\qlnhansu\\views\\shared\\layoutuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{96EBA5A2-709B-418D-9E8E-1A082E80809F}|QLNhanSu\\QLNhanSu.csproj|solutionrelative:qlnhansu\\views\\shared\\layoutuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96EBA5A2-709B-418D-9E8E-1A082E80809F}|QLNhanSu\\QLNhanSu.csproj|c:\\users\\vo van khoi\\onedrive\\documents\\quanlynhansu\\qlnhansu\\views\\shared\\layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{96EBA5A2-709B-418D-9E8E-1A082E80809F}|QLNhanSu\\QLNhanSu.csproj|solutionrelative:qlnhansu\\views\\shared\\layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DangNhap.cshtml",
-              "DocumentMoniker": "D:\\Project\\QLNhanSu\\QLNhanSu\\QLNhanSu\\Views\\MyHome\\DangNhap.cshtml",
-              "RelativeDocumentMoniker": "QLNhanSu\\Views\\MyHome\\DangNhap.cshtml",
-              "ToolTip": "D:\\Project\\QLNhanSu\\QLNhanSu\\QLNhanSu\\Views\\MyHome\\DangNhap.cshtml",
-              "RelativeToolTip": "QLNhanSu\\Views\\MyHome\\DangNhap.cshtml",
+              "Title": "LayoutUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\VO VAN KHOI\\OneDrive\\Documents\\QuanLyNhanSu\\QLNhanSu\\Views\\Shared\\LayoutUser.cshtml",
+              "RelativeDocumentMoniker": "QLNhanSu\\Views\\Shared\\LayoutUser.cshtml",
+              "ToolTip": "C:\\Users\\VO VAN KHOI\\OneDrive\\Documents\\QuanLyNhanSu\\QLNhanSu\\Views\\Shared\\LayoutUser.cshtml",
+              "RelativeToolTip": "QLNhanSu\\Views\\Shared\\LayoutUser.cshtml",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAewF0AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-05T06:43:26.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LayoutAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\VO VAN KHOI\\OneDrive\\Documents\\QuanLyNhanSu\\QLNhanSu\\Views\\Shared\\LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "QLNhanSu\\Views\\Shared\\LayoutAdmin.cshtml",
+              "ToolTip": "C:\\Users\\VO VAN KHOI\\OneDrive\\Documents\\QuanLyNhanSu\\QLNhanSu\\Views\\Shared\\LayoutAdmin.cshtml",
+              "RelativeToolTip": "QLNhanSu\\Views\\Shared\\LayoutAdmin.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-05T05:15:19.634Z",
+              "WhenOpened": "2024-10-05T06:42:46.371Z",
               "EditorCaption": ""
             }
           ]
