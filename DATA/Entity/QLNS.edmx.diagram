@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8aff804f3d5c4e87830aff8918c42da7" Name="Diagram1">
+        <EntityTypeShape EntityType="QLNSuModel.BAOHIEM" Width="1.5" PointX="3" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNSuModel.BHXH" Width="1.5" PointX="5.25" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNSuModel.BHYT" Width="1.5" PointX="8.25" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNSuModel.CHUCVU" Width="1.5" PointX="0.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNSuModel.DANTOC" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNSuModel.HOPDONG" Width="1.5" PointX="5.25" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNSuModel.NHANVIEN" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNSuModel.PHIEULUONG" Width="1.5" PointX="7.5" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNSuModel.PHIEUNGHIPHEP" Width="1.5" PointX="5.25" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNSuModel.PHONGBAN" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNSuModel.QUOCTICH" Width="1.5" PointX="0.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNSuModel.TAIKHOANADMIN" Width="1.5" PointX="5.25" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNSuModel.TAIKHOANNGUOIDUNG" Width="1.5" PointX="5.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNSuModel.TONGIAO" Width="1.5" PointX="0.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNSuModel.TRINHDO" Width="1.5" PointX="0.75" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNSuModel.VAITRO" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <AssociationConnector Association="QLNSuModel.FK_BHXH_BAOHIEM" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSuModel.FK_BHYT_BAOHIEM" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSuModel.FK_BHXH_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSuModel.FK_BHYT_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSuModel.FK_NHANVIEN_ToCHUCVU" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSuModel.FK_PHIEULUONG_CHUCVU" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSuModel.FK_NHANVIEN_ToDANTOC" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSuModel.FK_HOPDONG_ToNHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSuModel.FK_NGHIPHEP_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSuModel.FK_NHANVIEN_ToPHONGBAN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSuModel.FK_NHANVIEN_ToQUOCTICH" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSuModel.FK_NHANVIEN_ToTONGIAO" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSuModel.FK_NHANVIEN_ToTRINHDO" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSuModel.FK_PHIEULUONG_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSuModel.FK_TAIKHOANNGUOIDUNG_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSuModel.FK_PHIEULUONG_PHIEUNGHIPHEP" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSuModel.FK_TAIKHOANADMIN_VAITRO" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSuModel.FK_TAIKHOANNGUOIDUNG_VAITRO" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

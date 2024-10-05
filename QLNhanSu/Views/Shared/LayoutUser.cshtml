@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Hoang Dieu School</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- style css -->
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+    <!-- Responsive-->
+    <link href="~/Content/css/responsive.css" rel="stylesheet" />
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+
+    <!-- Scrollbar Custom CSS -->
+    <link href="~/Content/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+    <!-- owl stylesheets -->
+
+    <link href="~/Content/css/owl.carousel.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+</head>
+<body>
+    <div class="header_section">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                <div style="font-size:20px; font-family: 'Times New Roman', Times, serif" class="logo"><a href="~/Home/Index"><img src="~/Content/images/logoHD.png">HOÀNG DIỆU</a></div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="~/Home/index">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about">About</a>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="search_icon">
+                        <ul>
+
+                            <li><a href="#"><img src="~/Content/images/search-icon.png"></a></li>
+                            <li><a href="~/MyHome/dangnhap">LOGIN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+    <div class="footer_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="fooer_logo"><img src="~/Content/images/footer-logo.png"></div>
+                   
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h1 class="customer_text">GROUP 5</h1>
+                    <p class="footer_lorem_text">
+                        Quynh Nhu<br>
+                        Thu Ngan<br>
+                        Van Long<br>
+                        Ngoc Phuc<br>
+                        Van Khoi<br>
+                        Xin chaoooo!!
+                    </p>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h1 class="customer_text">INFORMATION</h1>
+                    <p class="footer_lorem_text1">
+                        About Us<br>
+                        Contact Us<br>
+                    </p>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2"><a href="#">Subscribe</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright_section">
+        <div class="container">
+            <div class="social_icon">
+                <ul>
+                    <li><a href="#"><img src="~/Content/images/fb-icon.png"></a></li>
+                    <li><a href="#"><img src="~/Content/images/twitter-icon.png"></a></li>
+                    <li><a href="#"><img src="~/Content/images/instagram-icon.png"></a></li>
+                    <li><a href="#"><img src="~/Content/images/linkedin-icon.png"></a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    
+    <script src="~/Content/js/jquery.min.js"></script>
+    <script src="~/Content/js/popper.min.js"></script>
+    <script src="~/Content/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Content/js/jquery-3.0.0.min.js"></script>
+    <script src="~/Content/js/plugin.js"></script>
+  
+    <script src="~/Content/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="~/Content/js/custom.js"></script>
+   
+    <script src="~/Content/js/owl.carousel.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+</body>
+</html>
